@@ -1,0 +1,21 @@
+// variables according to style guide
+$color-main-background: hsl(233, 47%, 7%);
+$color-card-background: hsl(244, 38%, 16%);
+$color-violet: hsl(277, 64%, 61%);
+// $color-violet-2 for linear-gradient, doesn't look exactly same
+$color-violet-2: hsla(277, 84%, 38%, 0.52);
+$color-main-white: hsl(0, 0%, 100%);
+$color-white-1: hsla(0, 0%, 100%, 0.75);
+$color-white-2: hsla(0, 0%, 100%, 0.6);
+$font-size-default: 15px;
+$font-main: "Inter", sans-serif;
+$font-stats: "Lexend Deca", sans-serif;
+$width-mobile: 375px;
+$width-desktop: 1440px;
+$radius: 10px;
+
+@mixin desktop {
+  @media screen and (min-width: $width-desktop) {
+    @content;
+  }
+}
