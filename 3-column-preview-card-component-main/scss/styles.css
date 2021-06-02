@@ -1,0 +1,25 @@
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cards {
+  background-color: #f2f2f2;
+  width: 100vw;
+  height: 100vh;
+}
+/*# sourceMappingURL=styles.css.map */
