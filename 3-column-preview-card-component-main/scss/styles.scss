@@ -1,7 +1,73 @@
 @import "./variables";
 
-.cards{
+.background {
   background-color: $color-gray-light;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.cards {
+  min-width: $breakpoint-mobile;
+  max-width: 95%;
+  // background-color: lightcoral;
+}
+
+.card {
+  color: $color-white-transparent;
+  padding: 3rem;
+
+  &__title {
+    text-transform: uppercase;
+    font-family: $font-bold;
+    font-size: 2rem;
+    color: $color-gray-light;
+    margin: 1rem 0;
+    // letter-spacing: 2px;
+  }
+
+  &__text {
+    line-height: 1.5;
+    padding-right: 4rem;
+    max-width: 500px;
+  }
+
+  &__btn {
+    display: block;
+    width: fit-content;
+    background-color: $color-gray-light;
+    padding: 0.75rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 1000px;
+  }
+
+  &__sedans {
+    background-color: $color-orange;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+  }
+
+  &__btn-sedans {
+    color: $color-orange;
+  }
+
+  &__suvs {
+    background-color: $color-cyan;
+  }
+
+  &__btn-suvs {
+    color: $color-cyan;
+  }
+
+  &__luxury {
+    background-color: $color-cyan-dark;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    
+  }
+
+  &__btn-luxury {
+    color: $color-cyan-dark;
+  }
 }
