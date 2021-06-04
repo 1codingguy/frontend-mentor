@@ -11,12 +11,20 @@
 .cards {
   min-width: $breakpoint-mobile;
   max-width: 95%;
-  // background-color: lightcoral;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  @include mQ($breakpoint-desktop) {
+    max-width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card {
   color: $color-white-transparent;
   padding: 3rem;
+  padding-right: 1.5rem;
+  
 
   &__title {
     text-transform: uppercase;
@@ -25,27 +33,52 @@
     color: $color-gray-light;
     margin: 1rem 0;
     // letter-spacing: 2px;
+
+    @include mQ($breakpoint-desktop) {
+      margin: 2rem 0;
+    }
   }
 
   &__text {
     line-height: 1.5;
     padding-right: 4rem;
     max-width: 500px;
+
+    @include mQ($breakpoint-desktop) {
+      padding-right: 2.5rem;
+    }
   }
 
   &__btn {
     display: block;
     width: fit-content;
     background-color: $color-gray-light;
+    border: 2px solid $color-gray-light;
     padding: 0.75rem 1.5rem;
     margin: 2rem 0;
     border-radius: 1000px;
+    transition: all 0.5s ease-in-out;
+
+    @include mQ($breakpoint-desktop) {
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $color-gray-light;
+    }
   }
 
   &__sedans {
     background-color: $color-orange;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
+
+    @include mQ($breakpoint-desktop) {
+      border-bottom-left-radius: $border-radius;
+      border-top-right-radius: 0;
+    }
   }
 
   &__btn-sedans {
@@ -64,7 +97,11 @@
     background-color: $color-cyan-dark;
     border-bottom-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
-    
+
+    @include mQ($breakpoint-desktop) {
+      border-bottom-left-radius: 0;
+      border-top-right-radius: $border-radius;
+    }
   }
 
   &__btn-luxury {
