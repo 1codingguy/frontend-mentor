@@ -24,7 +24,7 @@ Guideline provided by Frontend mentor:
 
 ### Screenshot
 
-![](./stats-preview-card-mobile.png)
+![](./stats-preview-card-desktop-screenshot.png)
 
 ### Links
 
