@@ -10,7 +10,7 @@ I started working on [frontend-mentor challenges](https://www.frontendmentor.io/
 
 ---
 
-[![screenshot](./3-column-preview-card-component-main\3-col-preview-card-desktop.png)](./3-column-preview-card-component-main)
+[![screenshot](./3-column-preview-card-component-main/3-col-preview-card-desktop.png)](./3-column-preview-card-component-main)
 
 [3 column preview card component](.//3-column-preview-card-component-main)
 
