@@ -1,0 +1,47 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.625em;
+}
+
+body {
+  font-size: 1.4em;
+  width: 100vw;
+  height: 100vh;
+}
+main {
+  background-color: $color-dark-cyan;
+  background-image: url("../images/bg-pattern-bottom.svg");
+  background-image: url("../images/bg-pattern-top.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: left;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.card{
+  width: 500px;
+  height: 500px;
+
+  &__top{
+    background-image: url('../images/bg-pattern-card.svg');
+    // position: relative;
+  }
+
+  &__image{
+    // position: relative;
+    left: 50%;
+    top: 105%;
+    
+  }
+}
